@@ -63,6 +63,13 @@ struct ContentView: View {
                                     }
                                 }
                             }
+                            .contextMenu{
+                                Button {
+                                    DataController().addFood(name: food.name!, calories: food.calories, protein: food.protein, fat: food.fat, carbs: food.carbs, context: managedObjContext)
+                                } label: {
+                                    Label("Duplicate", systemImage: "doc.on.doc")
+                                }
+                            }
                         }
                         .onDelete(perform: deleteFood)
                         VStack{
