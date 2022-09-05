@@ -17,6 +17,7 @@ struct AddFoodView: View {
     @State private var protein: Double = 0
     @State private var fat: Double = 0
     @State private var carbs: Double = 0
+    @State private var date: Date = Date()
     
     var body: some View {
         Form{
@@ -43,6 +44,10 @@ struct AddFoodView: View {
                     Text("Carbohydrates: ")
                     TextField("0",value: $carbs, formatter: NumberFormatter())
                         .keyboardType(.numberPad)
+                }
+                
+                DatePicker(selection: $date, in: ...Date()) {
+                                Text("Select a date")
                 }
                 
                 HStack{

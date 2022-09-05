@@ -19,6 +19,7 @@ struct EditFoodView: View {
     @State private var protein: Double = 0
     @State private var fat: Double = 0
     @State private var carbs: Double = 0
+    @State private var date: Date = Date()
     
     var body: some View {
         Form {
@@ -26,6 +27,7 @@ struct EditFoodView: View {
                 TextField("\(food.name!)", text: $name)
                     .onAppear {
                         name = food.name!
+                        date = food.date!
                         calories = food.calories
                         protein = food.protein
                         fat = food.fat
@@ -52,10 +54,14 @@ struct EditFoodView: View {
                         .keyboardType(.numberPad)
                 }
                 
+                DatePicker(selection: $date, in: ...Date()) {
+                                Text("Select a date")
+                }
+                
                 HStack{
                     Spacer()
                     Button("Submit") {
-                        DataController().editFood(food: food, name: name,date: food.date!, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
+                        DataController().editFood(food: food, name: name, date: date, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
                         dismiss()
                     }
                     Spacer()
