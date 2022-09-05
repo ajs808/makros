@@ -53,7 +53,7 @@ struct AddFoodView: View {
                 HStack{
                     Spacer()
                     Button("Submit"){
-                        DataController().addFood(name: name, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
+                        DataController().addFood(name: name, date: date, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
                         presentationMode.wrappedValue.dismiss()
                     }
                     Spacer()

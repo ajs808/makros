@@ -65,7 +65,7 @@ struct ContentView: View {
                             }
                             .contextMenu{
                                 Button {
-                                    DataController().addFood(name: food.name!, calories: food.calories, protein: food.protein, fat: food.fat, carbs: food.carbs, context: managedObjContext)
+                                    DataController().addFood(name: food.name!, date: food.date!, calories: food.calories, protein: food.protein, fat: food.fat, carbs: food.carbs, context: managedObjContext)
                                 } label: {
                                     Label("Duplicate", systemImage: "doc.on.doc")
                                 }
