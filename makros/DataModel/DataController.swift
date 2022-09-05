@@ -41,8 +41,8 @@ class DataController: ObservableObject {
         save(context: context)
     }
     
-    func editFood(food: Food, name: String, calories: Double, protein: Double, fat: Double, carbs: Double, context: NSManagedObjectContext){
-        food.date = Date()
+    func editFood(food: Food, name: String, date: Date,calories: Double, protein: Double, fat: Double, carbs: Double, context: NSManagedObjectContext){
+        food.date = date
         food.name = name
         food.calories = calories
         food.protein = protein
