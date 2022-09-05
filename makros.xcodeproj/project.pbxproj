@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F7114E8A28C2AB3C00EB0DE3 /* makrosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114E8928C2AB3C00EB0DE3 /* makrosApp.swift */; };
-		F7114E8C28C2AB3C00EB0DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114E8B28C2AB3C00EB0DE3 /* ContentView.swift */; };
 		F7114E8E28C2AB3D00EB0DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7114E8D28C2AB3D00EB0DE3 /* Assets.xcassets */; };
 		F7114E9128C2AB3D00EB0DE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7114E9028C2AB3D00EB0DE3 /* Preview Assets.xcassets */; };
 		F7114E9A28C2AB7B00EB0DE3 /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7114E9828C2AB7B00EB0DE3 /* FoodModel.xcdatamodeld */; };
@@ -17,12 +16,12 @@
 		F7114EA228C2B13500EB0DE3 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114EA128C2B13500EB0DE3 /* TimeFormatting.swift */; };
 		F7114EA428C2B5F800EB0DE3 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114EA328C2B5F800EB0DE3 /* EditFoodView.swift */; };
 		F7114EA628C2D3D000EB0DE3 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114EA528C2D3D000EB0DE3 /* ProgressBarView.swift */; };
+		F7CD2EAC28C67C5E002CF8AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CD2EAB28C67C5E002CF8AC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7114E8628C2AB3C00EB0DE3 /* makros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7114E8928C2AB3C00EB0DE3 /* makrosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makrosApp.swift; sourceTree = "<group>"; };
-		F7114E8B28C2AB3C00EB0DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7114E8D28C2AB3D00EB0DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7114E9028C2AB3D00EB0DE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7114E9928C2AB7B00EB0DE3 /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		F7114EA128C2B13500EB0DE3 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 		F7114EA328C2B5F800EB0DE3 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 		F7114EA528C2D3D000EB0DE3 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		F7CD2EAB28C67C5E002CF8AC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 		F7114E9D28C2AD1800EB0DE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F7114E8B28C2AB3C00EB0DE3 /* ContentView.swift */,
+				F7CD2EAB28C67C5E002CF8AC /* ContentView.swift */,
 				F7114EA528C2D3D000EB0DE3 /* ProgressBarView.swift */,
 				F7114E9F28C2AD2A00EB0DE3 /* AddFoodView.swift */,
 				F7114EA328C2B5F800EB0DE3 /* EditFoodView.swift */,
@@ -180,10 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7114EA028C2AD2A00EB0DE3 /* AddFoodView.swift in Sources */,
-				F7114E8C28C2AB3C00EB0DE3 /* ContentView.swift in Sources */,
 				F7114E9C28C2ABEB00EB0DE3 /* DataController.swift in Sources */,
 				F7114E8A28C2AB3C00EB0DE3 /* makrosApp.swift in Sources */,
 				F7114E9A28C2AB7B00EB0DE3 /* FoodModel.xcdatamodeld in Sources */,
+				F7CD2EAC28C67C5E002CF8AC /* ContentView.swift in Sources */,
 				F7114EA628C2D3D000EB0DE3 /* ProgressBarView.swift in Sources */,
 				F7114EA428C2B5F800EB0DE3 /* EditFoodView.swift in Sources */,
 				F7114EA228C2B13500EB0DE3 /* TimeFormatting.swift in Sources */,

@@ -20,6 +20,7 @@ struct ContentView: View {
     let carbGoal = 275
     
     @State private var showingAddView = false
+    @State private var opacity = 0.0
 //    @State var calorieProgress: Float  = 0.4
     
     
@@ -119,6 +120,12 @@ struct ContentView: View {
             }
             .sheet(isPresented: $showingAddView) {
                 AddFoodView()
+            }
+        }
+        .opacity(opacity)
+        .onAppear{
+            withAnimation(.easeInOut(duration: 0.25)) {
+                self.opacity = 1.0
             }
         }
         .navigationViewStyle(.stack)
