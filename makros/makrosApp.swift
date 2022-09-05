@@ -30,7 +30,8 @@ struct makrosApp: App {
                             .foregroundColor(.blue)
                         Text("makros")
                             .font(.largeTitle.weight(.semibold))
-                            .foregroundColor(.black.opacity(0.80))
+                            .foregroundColor(.black)
+                            .opacity(0.80)
                     }
                     .scaleEffect(size)
                     .opacity(opacity)
@@ -41,8 +42,9 @@ struct makrosApp: App {
                         }
                     }
                 }
+                // TODO: Fix in dark mode
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
                         withAnimation{
                             self.isActive = true
                         }
