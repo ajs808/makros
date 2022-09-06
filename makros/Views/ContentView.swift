@@ -14,10 +14,10 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var foodItems: FetchedResults<Food>
     
-    let calGoal = 2400
-    let proteinGoal = 200
-    let fatGoal = 120
-    let carbGoal = 275
+    @AppStorage("calGoal") private var calGoal = 2000
+    @AppStorage("proteinGoal") private var proteinGoal = 120
+    @AppStorage("fatGoal") private var fatGoal = 70
+    @AppStorage("carbGoal") private var carbGoal = 240
     
     @State private var showingAddView = false
     @State private var opacity = 0.0
@@ -116,6 +116,12 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: SettingsView()) {
+                        Image(systemName: "gear")
+                    }
+
                 }
             }
             .sheet(isPresented: $showingAddView) {

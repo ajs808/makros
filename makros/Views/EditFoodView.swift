@@ -55,7 +55,7 @@ struct EditFoodView: View {
                 }
                 
                 DatePicker(selection: $date, in: ...Date()) {
-                                Text("Select a date")
+                    Text("Select a date")
                 }
                 
                 HStack{
@@ -68,5 +68,6 @@ struct EditFoodView: View {
                 }
             }
         }
+        .navigationTitle("Edit Item")
     }
 }

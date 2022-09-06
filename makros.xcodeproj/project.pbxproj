@@ -17,6 +17,7 @@
 		F7114EA428C2B5F800EB0DE3 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114EA328C2B5F800EB0DE3 /* EditFoodView.swift */; };
 		F7114EA628C2D3D000EB0DE3 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7114EA528C2D3D000EB0DE3 /* ProgressBarView.swift */; };
 		F7CD2EAC28C67C5E002CF8AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CD2EAB28C67C5E002CF8AC /* ContentView.swift */; };
+		F7FF719E28C7D7E900E79F43 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FF719D28C7D7E900E79F43 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F7114EA328C2B5F800EB0DE3 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 		F7114EA528C2D3D000EB0DE3 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		F7CD2EAB28C67C5E002CF8AC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7FF719D28C7D7E900E79F43 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				F7114EA528C2D3D000EB0DE3 /* ProgressBarView.swift */,
 				F7114E9F28C2AD2A00EB0DE3 /* AddFoodView.swift */,
 				F7114EA328C2B5F800EB0DE3 /* EditFoodView.swift */,
+				F7FF719D28C7D7E900E79F43 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				F7114EA028C2AD2A00EB0DE3 /* AddFoodView.swift in Sources */,
 				F7114E9C28C2ABEB00EB0DE3 /* DataController.swift in Sources */,
 				F7114E8A28C2AB3C00EB0DE3 /* makrosApp.swift in Sources */,
+				F7FF719E28C7D7E900E79F43 /* SettingsView.swift in Sources */,
 				F7114E9A28C2AB7B00EB0DE3 /* FoodModel.xcdatamodeld in Sources */,
 				F7CD2EAC28C67C5E002CF8AC /* ContentView.swift in Sources */,
 				F7114EA628C2D3D000EB0DE3 /* ProgressBarView.swift in Sources */,

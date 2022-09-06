@@ -47,7 +47,7 @@ struct AddFoodView: View {
                 }
                 
                 DatePicker(selection: $date, in: ...Date()) {
-                                Text("Select a date")
+                    Text("Select a date")
                 }
                 
                 HStack{
@@ -58,6 +58,7 @@ struct AddFoodView: View {
                     }
                     Spacer()
                 }
+                //TODO: Add back button
             }
         }
     }
