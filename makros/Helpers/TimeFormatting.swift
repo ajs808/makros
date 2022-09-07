@@ -14,10 +14,12 @@ func calcTimeSince(date: Date) -> String {
     
     if minutes < 2 {
         return "just now"
-    } else if minutes < 120 {
+    } else if minutes < 60 {
         return "\(minutes) minutes ago"
-    } else if minutes >= 120 && hours < 48 {
+    } else if minutes >= 60 && hours < 24 {
         return "\(hours) hours ago"
+    } else if days == 1{
+        return "\(days) day ago"
     } else {
         return "\(days) days ago"
     }
