@@ -47,18 +47,19 @@ struct AddFoodView: View {
                 }
                 
                 DatePicker(selection: $date, in: ...Date()) {
-                    Text("Select a date")
-                }
-                
-                HStack{
-                    Spacer()
-                    Button("Submit"){
-                        DataController().addFood(name: name, date: date, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
-                        presentationMode.wrappedValue.dismiss()
-                    }
-                    Spacer()
+                    Text("Date:")
                 }
                 //TODO: Add back button
+            }
+            Button("Submit"){
+                DataController().addFood(name: name, date: date, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
+                presentationMode.wrappedValue.dismiss()
+            }
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Text("Cancel")
+                    .foregroundColor(.red)
             }
         }
     }

@@ -57,15 +57,16 @@ struct EditFoodView: View {
                 DatePicker(selection: $date, in: ...Date()) {
                     Text("Select a date")
                 }
-                
-                HStack{
-                    Spacer()
-                    Button("Submit") {
-                        DataController().editFood(food: food, name: name, date: date, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
-                        dismiss()
-                    }
-                    Spacer()
-                }
+            }
+            Button("Submit") {
+                DataController().editFood(food: food, name: name, date: date, calories: calories, protein: protein, fat: fat, carbs: carbs, context: managedObjContext)
+                dismiss()
+            }
+            Button {
+                dismiss()
+            } label: {
+                Text("Cancel")
+                    .foregroundColor(.red)
             }
         }
         .navigationTitle("Edit Item")
